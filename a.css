@@ -1,0 +1,122 @@
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+
+html { 
+  background: url(a.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size:cover;
+  -ms-background-size: cover;
+  background-size: 100% 100%;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size:1.8vw;
+}
+body{margin: 0;}
+body,h1 {font-family: serif,"Times New Roman", Times,"Raleway", sans-serif}
+
+a {
+    color: hotpink;
+}
+a:link {
+	font-weight:bold;
+    text-decoration: none;
+}
+a:hover {
+    color: lightgreen;
+}
+
+.middle{
+    height:90%;
+	width:94%;
+	background:rgba(1,1,1,0.5);
+	background:linear-gradient(rgba(1,1,1,0.8),rgba(1,1,1,0.2));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#1C1C1C', endColorstr='#4cffffff'); /* IE */
+	padding:2% 1%;
+	text-align: center;
+	color:#C0C0C0;
+	position: absolute;
+    top:0;
+    bottom: 0;
+	left: 0;
+    right: 0;
+	overflow:auto;
+	margin:auto;
+	display: flex;
+}
+.middlecontent{
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  margin:auto;
+  color: hotpink;
+  height:45%;
+}
+.middlecontent:link {
+	font-weight:bold;
+    text-decoration: none;
+}
+.middlecontent:hover {
+    color: lightgreen;
+}
+.middletitle{
+	margin: 0 0 2% 0;
+	line-height: 350%;
+	font-size: 3em;
+	line-height:1em;
+}
+.middletext{
+	margin: 3% 0 1% 0;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.sendbutton{
+	font-family: serif,"Times New Roman","Raleway", sans-serif;
+	font-weight: bold;
+	margin: 1% 5% 0 5%;
+	padding: 1% 2% 1% 2%;
+	font-size: 3em;
+	border-width:5px;
+	border-style:outset;
+	border-color:#00FF00;
+	border-radius:100px;
+	color:pink;
+	background-color:#008080;
+	box-shadow: 5px 8px #008000;
+	cursor: pointer;
+	transition: all 0.5s;
+    cursor: pointer;
+}
+
+.sendbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.sendbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.1s;
+}
+.sendbutton:hover span {
+  padding-right: 25px;
+}
+.sendbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.copyright{
+  padding:3% 0 0 0;
+  text-align: center;
+  color:#EBE3E3;
+  font-size: 1em;
+}
